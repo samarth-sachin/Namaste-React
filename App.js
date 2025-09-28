@@ -1,31 +1,10 @@
-const nestedTree = React.createElement(
-  "div",
-  { id: "grandparent" },
-  React.createElement(
-    "div",
-    { id: "parent" },
-    [
-      React.createElement(
-        "div",
-        { id: "child1" },
-        [
-          React.createElement("h1", { id: "sam" }, "Hi Sam he"),
-          React.createElement("h2", { id: "k" }, "Underlined"),
-          React.createElement("p", { id: "note" }, "This is a nested paragraph.")
-        ]
-      ),
-      React.createElement(
-        "div",
-        { id: "child2" },
-        [
-          React.createElement("h1", { id: "sam" }, "Hi Sam he"),
-          React.createElement("h2", { id: "k" }, "Underlined"),
-          React.createElement("p", { id: "note" }, "This is a nested paragraph.")
-        ]
-      )
-    ]
-  )
-);
-
+import React from "react";
+import ReactDOM from "react-dom/client"
+const Headingjsx=()=>{
+return <h1 id="heading"> samarth1 </h1>
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(nestedTree);
+const Run=()=>(
+    <><Headingjsx /><h1 id="heal">samarth</h1></>
+);
+root.render(<Run/>);
