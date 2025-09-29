@@ -1,3 +1,83 @@
-#sam{
-    color: red;
+.header {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-between; /* spreads logo and navbar */
+  align-items: center;
+}
+
+.logo-container {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1; 
+}
+
+.navbar > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > ul > li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+}
+.res-card{
+    margin: 2px;
+    height: 300px;
+    width: 200px;
+    
+
+}
+.rest-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-card :hover{
+border: 1px solid black;
+}
+.header {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-between; /* spreads logo and navbar */
+  align-items: center;
+}
+
+.logo-container {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1; 
+}
+
+.navbar > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > ul > li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+}
+.res-card{
+    padding: 5px;
+    height: 400px;
+    width: 250px;
+    border: 1px solid black;
+
+}
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding: 5px;
 }
