@@ -1,5 +1,43 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
+const rest = [
+  {
+    resname: "samarth foods",
+    cousines: "birayani,north",
+    ratings: "4.6",
+    time: "38 mins"
+  },
+  {
+    resname: "KFC",
+    cousines: "chicken",
+    ratings: "4.6",
+    time: "38 mins"
+  },
+  {
+    resname: "MAC-d",
+    cousines: "burger",
+    ratings: "4.6",
+    time: "38 mins"
+  },
+  {
+    resname: "Pan shop",
+    cousines: "Masala Pan",
+    ratings: "4.6",
+    time: "38 mins"
+  },
+  {
+    resname: "BK",
+    cousines: "Chicken Burger",
+    ratings: "4.6",
+    time: "38 mins"
+  },
+  {
+    resname: "Sainath",
+    cousines: "Thali",
+    ratings: "4.6",
+    time: "38 mins"
+  }
+];
 const Restaurant=(props)=>{
 return(
     <div className="res-card">
@@ -18,12 +56,16 @@ const Body = () => {
             <div className="Search"> Search  </div>
 
                 <div className="rest-cont">
-                    <Restaurant resname="samarth foods" cousines="birayani,north" ratings="4.6" time="38 mins" />
-                    <Restaurant resname="KFC" cousines="chicken" ratings="4.6" time="38 mins" />
-                    <Restaurant resname="MAC-d" cousines="burger" ratings="4.6" time="38 mins" />
-                    <Restaurant resname="Pan shop" cousines="Masala Pan" ratings="4.6" time="38 mins" />
-                    <Restaurant resname="BK" cousines="Chicken Burger" ratings="4.6" time="38 mins" />
-                    <Restaurant resname="Sainath" cousines="Thali" ratings="4.6" time="38 mins" />
+                  {rest.map((restaurant, index) => (
+  <Restaurant
+    key={index}
+    resname={restaurant.resname}
+    cousines={restaurant.cousines}
+    ratings={restaurant.ratings}
+    time={restaurant.time}
+  />
+))}
+
             </div>
         </div>
     );
