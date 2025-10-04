@@ -2,19 +2,19 @@ const rest = [
   {
     resname: "samarth foods",
     cousines: "birayani,north",
-    ratings: "4.6",
+    ratings: "3.7",
     time: "38 mins"
   },
   {
     resname: "KFC",
     cousines: "chicken",
-    ratings: "4.6",
+    ratings: "3.8",
     time: "38 mins"
   },
   {
     resname: "MAC-d",
     cousines: "burger",
-    ratings: "4.6",
+    ratings: "4.1",
     time: "38 mins"
   },
   {
